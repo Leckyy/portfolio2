@@ -318,3 +318,21 @@ nav ul{
     left: -80px;
 }
 }
+
+
+
+/* dimension de  mon téléphone */
+
+
+@media screen and (max-width: 400px){
+    .titre .t1{
+        left: -127px;
+    }
+    .titre .t2{
+        position: relative;
+        left: -80px;
+    }
+    }
+
+
+    /* Fin dimension de mon téléphone */
