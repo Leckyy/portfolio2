@@ -305,3 +305,16 @@ nav ul{
        
     }
 }
+
+
+/* media téléphone */
+
+@media screen and (max-width: 390px){
+.titre .t1{
+    left: -127px;
+}
+.titre .t2{
+    position: relative;
+    left: -80px;
+}
+}
