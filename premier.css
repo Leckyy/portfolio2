@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.noir{
+	background-color: black;
+	color: white;
+}
+
+.test{
+    content: "ddd";
+}
+
+.blanc{
+	color: white;
+	background-color: black;
+}
+
+
+#change:hover{
+	cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+.hautPage {
+    background-color: aquamarine;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+	background: white;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.un::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.deux::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.4%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.trois::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.un2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.deux2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.4%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.quatre2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav a:hover::after{
+    transform: scale(1);
+}
+
+
+nav {
+	min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	flex: 0 1 40rem;
+}
+
+
+.titre{
+    text-align: center;
+}
+.intro{
+    position: relative;
+    text-align: center;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.zoo{
+    position: relative;
+    bottom: 280px;
+    left: 10px;
+
+}
+
+.yummi{
+    position: relative;
+    left: 770px;
+    bottom: 270px;
+    /* left: 1350px;
+    bottom: 550px; */
+}
+
+.t1-zoo{
+    display: inline-block;
+    position: relative;
+    bottom: 190px;
+    right: 45%;
+    transform: translate(-30%);
+
+}
+
+.photo-menu{
+    position: relative;
+    bottom: 100px;
+    width: 800px;
+    left: 10px;
+
+}
+
+.menu3{
+    height: 415px;
+}
+
+.menu1{
+    
+}
+.menu2{
+    height: 322px;
+}
+
+
+.t2-zoo{
+    position: relative ;
+    display: inline-block;
+    bottom: 520px;
+    left: 17%;
+    width: 350px;
+}

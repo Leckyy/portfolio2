@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.noir{
+	background-color: black;
+	color: white;
+}
+
+.test{
+    content: "ddd";
+}
+
+.blanc{
+	color: white;
+	background-color: black;
+}
+
+
+#change:hover{
+	cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+.hautPage {
+    background-color: aquamarine;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+	background: white;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.un::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.deux::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.trois::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.un2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.deux2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.quatre2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav a:hover::after{
+    transform: scale(1);
+}
+
+
+nav {
+	min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	flex: 0 1 40rem;
+}
+
+
+.image1{
+    margin-left: auto;
+    margin-top: 150px;
+    margin-left: 20%;
+}
+.titre1{
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+    left: 100px;
+}
+.text1{
+
+    display: inline-block;
+    position: relative;
+   bottom: 55px;
+   width: 25%;
+   text-align: center;
+    
+}
+
+.image2{
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-left: 52%;
+}
+
+
+.titre2{
+    display: inline-block;
+    position: relative;
+    bottom: 350px;
+    right: 58%;
+   
+   
+}
+
+.text2{
+
+    position: relative;
+   bottom: 355px;
+   width: 25%;
+   margin-left: 20%;
+   text-align: center;
+    
+}
+
+.titre3{
+    position: relative;
+    text-align: center;
+    bottom: 150px;
+}
+
+.text3{
+    position: relative;
+    text-align: center;
+    width: 500px;
+    bottom: 140px;
+    
+    margin: auto;
+}
+@media screen and (max-width: 1340px) {
+    nav ul{
+        display: flex;
+        flex: 1 1 50rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 1589px) { 
+    .text1{
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1292px) {
+    .text1{
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    .image1{
+        position: relative;
+        left: 9%;
+    }
+    .text1{
+
+        display: block;
+        position: relative;
+        left: 34%;
+        bottom: 65px;
+    }
+
+    .titre1{
+        display: block;
+        position: relative;
+        left: 41%;
+        bottom: 210px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+.image1{
+    text-align: center;
+    width: 400px;
+}
+
+.titre1{
+    display: block;
+    position: relative;
+    left: 41%;
+    bottom: 210px;
+    font-size: 30px;
+}
+
+.texte1{
+    width: 250px;
+}
+
+}
+
+@media screen and (max-width: 612px) {
+    .image1{
+        position: relative;
+        right: 10%;
+    }
+    }
+
+
+    @media screen and (max-width: 1669px) {
+        .titre2{
+          
+            display: block;
+            left: 22%;
+            margin: auto;
+        }
+    }
+
+@media screen and (max-width: 1413px) {
+    .titre2{
+        display: block;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    .image2{
+        display: block;
+        position: relative;
+        right: 28%;
+        bottom: 15px;
+    
+    }
+    .titre2{
+        bottom: 550px;
+        left: 41%;
+        bottom: 575px;
+        font-size: 30px;
+    }
+    .text2{
+        top: 1px;
+        bottom: 120px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 1127px){
+    .image1{
+        position: relative ;
+        display: inline-block;
+        left: 68px;
+    }
+}
+
+@media screen and (max-width: 977px){
+    .image1{
+        position: relative ;
+        display: inline-block;
+        left: 50px;
+    }
+}
+@media screen and (max-width: 784px) {
+    .image1{
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .image1{
+        left: 13px;
+    }
+    .text1{
+        left: 235px;
+    }
+}
+
+
+@media screen and (max-width: 537px) {
+    .image1{
+        left: -50px;
+    }
+    .titre1{
+        left: 175px;
+    }
+    .text1{
+       width: 280px;
+       left: 100px;
+    }
+
+    .titre3{
+        left: -30px;
+    }
+    .text3{
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 772px) {
+
+.image2{
+    right: 48%;
+    width: 400px;
+}
+
+.titre2{
+    bottom: 490px;
+    left: 35%;
+}
+.text2{
+    width: 250px;
+    position: relative;
+    left: 0px;
+}
+
+}
+
+@media screen and (max-width: 1229px) {
+
+    .titre3{
+        top: 1px;
+        
+       right: 5.5%;
+    }
+    .text3{
+      bottom: 0px;
+      right: 70px;
+    }
+
+    
+    }
+    
+
+    @media screen and (max-width: 1096px) {
+
+        .titre3{
+            
+            bottom: 120px;
+            right: 80px;
+        }
+
+    
+        
+        }
+
+        @media screen and (max-width: 922px) {
+
+            .titre3{
+                
+                bottom: 120px;
+                right: 70px;
+            }
+ 
+            
+            }
+
+            
+        @media screen and (max-width: 721px) {
+
+            .titre3{
+                
+                bottom: 120px;
+                right: 55px;
+            }
+
+            .text3{
+                
+                right: 6%;
+            }
+ 
+            
+            }
+
+            @media screen and (max-width: 497px) {
+
+                .titre3{
+                    
+                    bottom: 120px;
+                    right: 35px;
+                }
+    
+                .text3{
+                    
+                    right: 6%;
+                    width: 150px;
+                }
+     
+                
+                }
