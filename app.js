@@ -41,6 +41,44 @@ document.getElementById('change').addEventListener("click", function(){
 })
 
 
+
+var rideaux =0;
+document.getElementById('rideaux-change').addEventListener("click", function(){
+
+
+	if (rideaux === 0) {
+
+		document.querySelector(".un").classList.add('un2');
+		document.querySelector(".deux").classList.add('deux2');
+		document.querySelector(".trois").classList.add('trois2');
+		document.querySelector(".quatre").classList.add('quatre2');
+		document.querySelector(".cinq").classList.add('cinq2');
+		document.querySelector("body").classList.add('noir');
+		document.querySelector("#rideaux-change").innerHTML ="☀️";
+		rideaux++;
+		
+
+	}
+	else{
+		document.querySelector(".un").classList.remove('un2');
+		document.querySelector(".deux").classList.remove('deux2');
+		document.querySelector(".trois").classList.remove('trois2');
+		document.querySelector(".quatre").classList.remove('quatre2');
+		document.querySelector(".cinq").classList.remove('cinq2');
+		document.querySelector("body").classList.remove('noir');
+		document.querySelector("#rideaux-change").innerHTML ="🌕";
+		rideaux--;
+	}
+})
+
+
+
+
+
+
+
+
+
 var text =document.querySelector('#text');
 
 
@@ -54,6 +92,9 @@ new Typewriter(text, {
 .typeString('Développeur')
 .start()
 
+document.querySelector(".nav-toggler").addEventListener("click", function(){
+    document.querySelector(".nav-toggler").classList.toggle("active");
+	document.querySelector(".rideaux").classList.toggle("active");
 
-
+})
 
