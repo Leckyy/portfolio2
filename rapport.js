@@ -40,6 +40,28 @@ document.getElementById('change').addEventListener("click", function(){
 	}
 })
 
+var rideaux =0;
+document.getElementById('rideaux-change').addEventListener("click", function(){
+
+
+	if (rideaux === 0) {
+		document.querySelector(".nav-toggler").classList.add("rideaux-b");
+		document.querySelector("body").classList.add('noir');
+		document.querySelector("#rideaux-change").innerHTML ="☀️";
+		rideaux++;
+		
+
+	}
+	else{
+		document.querySelector(".nav-toggler").classList.remove("rideaux-b");
+		document.querySelector("body").classList.remove('noir');
+		document.querySelector("#rideaux-change").innerHTML ="🌕";
+		rideaux--;
+	}
+})
+
+
+
 
     const image = document.getElementById("image1");
     const titre = document.getElementById("titre");
@@ -90,6 +112,13 @@ document.getElementById("image2").addEventListener("mouseover", function(){
 
 document.getElementById("image2").addEventListener("mouseleave", function(){
 	document.getElementById("image2").style.transform="scale(1) rotate(0)";
+
+})
+
+
+document.querySelector(".nav-toggler").addEventListener("click", function(){
+    document.querySelector(".nav-toggler").classList.toggle("active");
+	document.querySelector(".rideaux").classList.toggle("active");
 
 })
 
