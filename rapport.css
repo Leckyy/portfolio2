@@ -697,3 +697,78 @@ nav ul{
                        
                     
                 }
+
+                @media screen and (max-width: 400px) {
+                    .nav-toggler {
+                        top: 10px;
+                        right: 33%;
+                        
+                        }
+                    
+                        nav{
+                            z-index: 10;
+                            position: fixed;
+                            width: 100vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            border-bottom: 1px solid rgb(0, 110, 255);
+                            transform: translateY(-100%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                    
+                        
+                        .rideaux{
+                            z-index: 10;
+                            position: fixed;
+                            width: 110vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            border-bottom: 1px solid rgb(0, 110, 255);
+                            transform: translateY(-100%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                        
+                        .rideaux.active{
+                            transform: translate(0);
+                        }
+                    
+                        #rideaux-change{
+                            cursor: pointer;
+                           }
+
+                           .titre1{
+                            left: 30%;
+                            
+                           }
+
+                           .image1{
+                            width: 350px;
+                            left: -13%;
+                           }
+
+                           .text1{
+                            left: 15%;
+                           }
+
+                           .titre3{
+                            left: 1%;
+                           }
+                           .text3{
+                            left: 2%;
+                           }
+
+
+
+                       
+                    
+                }
