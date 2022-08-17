@@ -42,12 +42,14 @@ document.getElementById('change').addEventListener("click", function(){
 
 
 
-var rideaux =0;
+
+
+	var rideaux =0;
 document.getElementById('rideaux-change').addEventListener("click", function(){
 
 
 	if (rideaux === 0) {
-
+		document.querySelector(".nav-toggler").classList.add("rideaux-b");
 		document.querySelector("body").classList.add('noir');
 		document.querySelector("#rideaux-change").innerHTML ="☀️";
 		rideaux++;
@@ -55,33 +57,13 @@ document.getElementById('rideaux-change').addEventListener("click", function(){
 
 	}
 	else{
-		
+		document.querySelector(".nav-toggler").classList.remove("rideaux-b");
 		document.querySelector("body").classList.remove('noir');
 		document.querySelector("#rideaux-change").innerHTML ="🌕";
 		rideaux--;
 	}
 })
 
-
-
-
-
-
-
-
-
-var text =document.querySelector('#text');
-
-
-new Typewriter(text, {
-	deletespeed: 20
-})
-.typeString('AURIAT Tristan  ')
-.typeString('Etudiant')
-.pauseFor(300)
-.deleteChars(8)
-.typeString('Développeur')
-.start()
 
 document.querySelector(".nav-toggler").addEventListener("click", function(){
     document.querySelector(".nav-toggler").classList.toggle("active");

@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-
 
 .rideaux{
     z-index: 10;
@@ -12,7 +9,6 @@
     align-items: center;
     flex-direction: column;
     background: black;
-    border-bottom: 1px solid rgb(0, 110, 255);
     transform: translateY(-150%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 
@@ -76,22 +72,33 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: black;
     transition: transform 0.3s ease-out,
     opacity 0.1s ease-out;
 }
 
+.nav-toggler.rideaux-b .l1{
+    background: white;
+}
+.nav-toggler.rideaux-b .l2{
+    background: white;
+}
+.nav-toggler.rideaux-b .l3{
+    background: white;
+}
+
 .l1{
     transform: translateY(-10px);
-    background: white;
+    background: black;
 }
 
 .l3{
     transform: translateY(10px);
-    background: white;
+    background: black;
 }
 .nav-toggler.active .l1{
     transform: translateY(0px) rotate(135deg);
+    background: white;
 }
 
 .nav-toggler.active .l2{
@@ -100,13 +107,8 @@
 
 .nav-toggler.active .l3{
     transform: translateY(0px) rotate(-135deg);
+    background: white;
 }
-
-
-
-
-
-
 
 
 .noir{
@@ -114,9 +116,6 @@
 	color: white;
 }
 
-.test{
-    content: "ddd";
-}
 
 .blanc{
 	color: white;
@@ -129,6 +128,7 @@
     transform: scale(1.4);
     transition: transform 0.4s ease-in-out;
 }
+
 
 
 
@@ -162,7 +162,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 5.4%;
+    width: 2.8%;
     height: 2px;
     background-color: #000;
     transform: scale(0);
@@ -176,7 +176,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 4.5%;
+    width: 5.5%;
     height: 2px;
     background-color: #000;
     transform: scale(0);
@@ -190,7 +190,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 7.5%;
+    width: 4.5%;
     height: 2px;
     background-color: #000;
     transform: scale(0);
@@ -201,7 +201,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 7.5%;
+    width: 4.5%;
     height: 2px;
     background-color: white;
     transform: scale(0);
@@ -212,7 +212,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 7.7%;
+    width: 7.4%;
     height: 2px;
     background-color: #000;
     transform: scale(0);
@@ -224,7 +224,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 6.2%;
+    width: 7.8%;
     height: 2px;
     background-color: #000;
     transform: scale(0);
@@ -237,7 +237,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 5.4%;
+    width: 2.8%;
     height: 2px;
     background-color: white;
     transform: scale(0);
@@ -249,30 +249,20 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 4.5%;
+    width: 5.5%;
     height: 2px;
     background-color: white;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
 
-.trois2::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 7.5%;
-    height: 2px;
-    background-color: white;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-}
 
 
 .quatre2::after{
     content: "";
     display: block;
     position: absolute;
-    width: 7.7%;
+    width: 7.4%;
     height: 2px;
     background-color: white;
     transform: scale(0);
@@ -284,7 +274,7 @@ nav a{
     content: "";
     display: block;
     position: absolute;
-    width: 6.2%;
+    width: 7.8%;
     height: 2px;
     background-color: white;
     transform: scale(0);
@@ -320,80 +310,36 @@ nav ul{
 #logo{
 	flex: 0 1 40rem;
 }
-
-
-
-
-
-.hautPage  {
-    background-image: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.8), 
-        rgba(0, 0, 0, 0.8)),
-    url(fond.jpg);
-    height: 56vh;
-    padding: 175px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.titre1{
+    position: relative;
+    left: 45%;
+    top: 100px;
+    transform: translate(-25%);
+}
+.texte{
+    position: relative;
+    top: 100px;
+    left: 20%;
+    width: 400px;
+    text-align: left;
 }
 
-.titre  {
-    color: white;
-    line-height: 35px;
-    text-align: center;
-}
-
-.titre .t1{
-    font-weight: 500;
-    font-size: 100px;
-    font-family: 'Abril Fatface', cursive;
-    
-    
-}
-.titre .t2{
-    font-size: 40px;
-    color: white;
-    font-weight: normal;
-    font-family: italic;
+.image1{
+    position: relative;
+    top: -100px;
+    left: 60%;
 }
 
 
 
 
-.propos{
-    text-align: center;
-}
-
-
-.infos .t3{
-    font-size: 30px;
-    text-align: center;
-}
-
-
-
-.infos p{
-	text-align: center;
-	width: 550px;
-	margin-left: 69vh;
-    margin: auto;
-}
-
-.footer p{
-    text-align: center;
-}
-
-.basPage{
-
-    padding: 4px;
-    margin: auto;
-}
-
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 400px) {
     .nav-toggler {
-        top: 30px;
+
+        top: 10px;
+        right: 15px;
+       
+        
         }
     
         nav{
@@ -406,8 +352,8 @@ nav ul{
             align-items: center;
             flex-direction: column;
             background: black;
-            border-bottom: 1px solid rgb(0, 110, 255);
-            transform: translateY(-100%);
+            /* border-bottom: 1px solid rgb(0, 110, 255); */
+            transform: translateY(-150%);
             transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
         
         }
@@ -423,77 +369,40 @@ nav ul{
             align-items: center;
             flex-direction: column;
             background: black;
-            border-bottom: 1px solid rgb(0, 110, 255);
-            transform: translateY(-100%);
+            /* border-bottom: 1px solid rgb(0, 110, 255); */
+            transform: translateY(-110%);
             transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
         
         }
         
         .rideaux.active{
             transform: translate(0);
+            transform: translateY(-7%);
         }
     
-       #rideaux-change{
-        cursor: pointer;
-       }
-    
-}
+        #rideaux-change{
+            cursor: pointer;
+           }
 
-@media screen and (max-width: 743px){
-    .titre .t1{
-        font-weight: 500;
-        font-size: 75px;
-        font-family: 'Abril Fatface', cursive;
-}
-}
 
-@media screen and (max-width: 645px){
-    .titre .t1{
+        .titre1{
         position: relative;
-        right: 20px;
-}
-}
-
-
-@media screen and (max-width: 557px){
-    .infos p{
-        
-        width: 250px;
-       
-    }
-}
-
-
-/* media téléphone */
-
-@media screen and (max-width: 390px){
-.titre .t1{
-    left: -127px;
-}
-.titre .t2{
-    position: relative;
-    left: -80px;
-}
-}
-
-
-
-/* dimension de  mon téléphone */
-
-
-@media screen and (max-width: 400px){
-    .titre .t1{
-        left: -127px;
-    }
-    .titre .t2{
+        left: 25%;
+        transform: translate(-25%);
+        }
+        .texte{
         position: relative;
-        left: -80px;
-    }
+        left: 25%;
+        transform: translate(-25%);
+        width: 300px;
+        text-align: left;
+        }
 
-    }
+        .image1{
+            position: relative;
+            top: 100px;
+            left: 10%;
+        }
 
 
-    
-
-
-    /* Fin dimension de mon téléphone */
+        }
