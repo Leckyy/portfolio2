@@ -240,9 +240,6 @@ nav{
 }
 
 
-
-
-
 h1,h2,h3{
     font-family: 'Montserrat', sans-serif;
 }
@@ -261,6 +258,7 @@ p,span{
   bottom: 20px;
   cursor: pointer;
   font-size: 25px;
+  z-index: 100000;
 
 
 }
@@ -367,8 +365,8 @@ p,span{
   bottom: 50px;
   background-color: lightblue;
   left: 10%;
- border-radius: 30% 70% 70% 30% / 30% 41% 59% 70% ;
- animation-duration: 15s;
+ border-radius: 58% 42% 71% 29% / 40% 60% 40% 60% ;
+ animation-duration: 13s;
 animation-name: blob-animation;
 animation-iteration-count: infinite;
 background-image: url("../image/test.gif");
@@ -379,28 +377,28 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 
 @keyframes blob-animation{
   0%{
-    border-radius: 30% 70% 70% 30% / 30% 41% 59% 70% ;
+    border-radius: 58% 42% 71% 29% / 40% 60% 40% 60%  ;
   }
   10%{
-    border-radius: 30% 70% 70% 30% / 30% 58% 42% 70% ;
+    border-radius: 43% 57% 63% 37% / 40% 36% 64% 60%  ;
   }
 
   25%{
-    border-radius: 47% 53% 82% 18% / 21% 58% 42% 79% ;
+    border-radius: 34% 66% 29% 71% / 62% 27% 73% 38%  ;
   }
 
   50%{
-    border-radius: 62% 38% 92% 8% / 14% 60% 40% 86% ;
+    border-radius: 51% 49% 55% 45% / 37% 57% 43% 63%  ;
   }
 
   75%{
-    border-radius: 62% 38% 79% 21% / 16% 49% 51% 84% ;
+    border-radius: 60% 40% 72% 28% / 51% 66% 34% 49%  ;
   }
   90%{
-    border-radius: 62% 38% 53% 47% / 16% 49% 51% 84% ;
+    border-radius: 37% 63% 51% 49% / 51% 60% 40% 49% ;
   }
   100%{
-    border-radius: 30% 70% 70% 30% / 30% 41% 59% 70% ;
+    border-radius: 58% 42% 71% 29% / 40% 60% 40% 60% ;
   }
 }
 
@@ -409,7 +407,11 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 }
 
 .Fond-Les-Languages{
-  background-color: #0099ff;
+  background-color: #97DEFF;
+  clip-path: polygon(0% 0%, 100% 1%, 100% 99%, 51% 91%, 0% 99%);
+
+
+
 }
 
 .TitreLangage{
@@ -423,7 +425,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 10px 8px 0;
 }
 
@@ -432,7 +434,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 0 8px 10px;
 }
 
@@ -451,7 +453,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 100%;
     /* background-color: #2f1d58; */
     height: auto;
-    
+    padding-bottom: 50px;
     flex-direction: row;
 }
 
@@ -1180,7 +1182,9 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     transform: translate(-50%);
     cursor: pointer;
     padding: 10px;
-    
+    border-radius: 10px;
+    background-color: white;
+    border-color: transparent;    
 }
 #diapoBT:hover{
   color: white;
@@ -1190,10 +1194,10 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
   content: "";
   position: absolute;
   height: 100%;
-  background-color: red;
-  
+  background-color: #009EFF;
   left: 0;
   top: 0;
+  border-radius: 10px;
   
 }
 
@@ -1663,6 +1667,14 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
   box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 }
 
+.dProjetZoo .photo{
+  position: relative;
+    width: 375px;
+    height: 350px;
+    object-fit: cover;
+    float: left;
+}
+
 
 /*********************************** dProjetEspaceCommentaire Fin ******************************** */
 
@@ -1675,7 +1687,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 .swiper {
     display: none;
     height: 800px;
-    width: 100%;
+    /* width: 100%; */
     
   }
 
@@ -2101,12 +2113,14 @@ transition: 0.5s ease-in-out;
   transform: translate(-50%);
 }
 
-.dProjetEspaceCommentaireDiapo img{
+.dProjetEspaceCommentaireDiapo .photo{
   
   position: relative;
   width: 100%;
   height: 350px;
   object-fit: cover;
+  left: 15%;
+  
   
  
 }
@@ -2227,7 +2241,7 @@ transition: 0.5s ease-in-out;
 
 
 /* ********************************* Formation ***************************************** */
-.TitreFormation{
+/* .TitreFormation{
     position: relative;
     text-align: center;
 }
@@ -2235,12 +2249,16 @@ transition: 0.5s ease-in-out;
 
 .TexteFormation{
     text-align: center;
-}
+} */
 
 
 
 /* **************************** Stage ************************************************************ */
-
+.FondStage{
+  background-color: #97DEFF;
+  position: relative;
+  bottom: 80px;
+}
 
 .TitreStage{
   position: relative;
@@ -2252,7 +2270,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 10px 8px 0;
 }
 
@@ -2261,7 +2279,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 0 8px 10px;
 }
 
@@ -2311,7 +2329,7 @@ transition: 0.5s ease-in-out;
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #0014FF;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -2405,26 +2423,6 @@ transition: 0.5s ease-in-out;
 
 /* ******************************* timeline FIN************************************************* */
 
-/********************************** popup timeline****************************************/
-
-#cross-solistos{
-  position: relative;
-  left: 97%;
-  font-size: 20px;
-  cursor: pointer;
-}
-.popup-solistos{
-  display: none;
-  
-  position: absolute;
-  background-color: white;
-  top: -3px;
-  z-index: 10;
-  left: 50%;
-  transform: translate(-50%);
-  padding-left: 10px;
-  transition: 2s ease-in;
-}
 
 /* *************************** Veille technologique ************************************************** */
 
@@ -2505,10 +2503,11 @@ transition: 0.5s ease-in-out;
 }
 
 .VeilleTechno2 .d1VeilleTechno2{
+  position: relative;
   width: 500px;
   height: 300px;
   margin: 55px;
-  background-color: lightblue;
+  bottom: 60px;
 }
 
 .VeilleTechno2 .d2VeilleTechno2{
@@ -2557,6 +2556,27 @@ transition: 0.5s ease-in-out;
 .TitreInfoImportante{
   text-align: center;
 }
+
+.TitreInfoImportante::before {
+	content: '';
+	display: inline-block;
+	width: 5rem;
+	height: 5px;
+	background-color: #EDB506;
+	margin: 0 10px 8px 0;
+}
+
+.TitreInfoImportante::after {
+	content: '';
+	display: inline-block;
+	width: 5rem;
+	height: 5px;
+	background-color: #EDB506;
+	margin: 0 0 8px 10px;
+}
+
+
+
 
 .TitreConclusion{
   text-align: center;

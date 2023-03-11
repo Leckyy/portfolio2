@@ -11,54 +11,15 @@ p{
 }
 
 
-.img-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-}
 
-.img-menu div {
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-    background-color: lightblue;
-}
 
-.img-menu div img {
-    width: 300px;
-    height: 400px;
-    
-   
-}
 
-.img-formulaire{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-}
 
-.img-formulaire div{
-    width: 500px;
-    height: 500px;
-    margin: 10px;
-    box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
-}
 
-.img-formulaire div img{
-    width: 500px;
-    
-    height: auto;
-}
+
+
+
+
 
 button{
     position: relative;
@@ -112,4 +73,3 @@ button:hover::before{
     clip-path: circle(0% at top left);
   }
 }
-

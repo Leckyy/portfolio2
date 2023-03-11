@@ -1,14 +1,12 @@
-  AOS.init();
+  AOS.init(); //animation
 
-
+  //*********************Le texte qui s'écrit ***************
   var text =document.querySelector('#desc-info');
-
 
 new Typewriter(text, {
 	deletespeed: 20,
   loop: true,
 })
-
 .typeString('Etudiant')
 .pauseFor(400)
 .deleteChars(8)
@@ -17,8 +15,32 @@ new Typewriter(text, {
 .start()
 
 
+//*********************Fin texte qui s'écrit ***************
 
 
+var desc=document.getElementById("spanDescription");
+window.addEventListener("scroll",function(){
+
+  if(scrollY < 180){
+
+new Typewriter(desc,{
+ DelayNode: 100,
+})
+    .changeDelay(30)
+    .typeString("Je m'appelle Tristan AURIAT je suis étudiant aux lycée Parc de Vilgenis ")
+    .start()
+    }
+
+    tempsPourTexte= setTimeout("DescSansAnimation()",3400);
+
+})
+
+function DescSansAnimation(){
+  desc.innerHTML="Je m'appelle Tristan AURIAT je suis étudiant aux lycée Parc de Vilgenis en deuxième année de SIO (Services Informatiques aux Organisations ) .Grace a mes stages effectuer mes années précedentes  j'ai découvert le développement web. Ceci ma permis de découvrir sur différentes formes en le codant, avec wordpress ou même Wix. J'ai beaucoup aimer réaliser des sites internets c'est pour cela que j'ai rejoins le lycee Parc de Vilgenis pour m'approfondir dans ce domaines. Pour cela en premiere année on a des cours pour apprendres le html css et php avec des minis-tp et des projets à réaliser pour ce former d'avantage. En deuxieme années  on nous apprends toujours le développement mais cette fois ci plus approfondi";
+}
+
+
+//***********************************Diapo****************************************** *
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -33,7 +55,9 @@ new Typewriter(text, {
     },
   });
 
+  //***********************************Fin Diapo****************************************** */
 
+// ************************************Boutton pour diapo**********************************
 var diapo = 0;
   document.getElementById('diapoBT').addEventListener("click", function(){
     if(diapo === 0){
@@ -55,6 +79,8 @@ var diapo = 0;
     }
   })
 
+
+
   if(localStorage.hasOwnProperty('diapo')){
         document.querySelector(".swiper").style.display="block";
         document.querySelector(".SectionProjet").style.display="none";
@@ -62,9 +88,9 @@ var diapo = 0;
     diapo="1";
   }
 
+// ************************************Fin Boutton pour diapo**********************************
 
-
-
+//**************************************** Mode sombre *************************************** */
   var fond =0;
 
   document.getElementById('FondCouleur').addEventListener("click",function(){
@@ -93,8 +119,6 @@ var diapo = 0;
       document.querySelector(".TexteLangage").classList.add("noir");
       document.querySelector(".TitreProjet").classList.add("noir");
       document.querySelector(".TexteProjet").classList.add("noir");
-      document.querySelector(".TitreFormation").classList.add("noir");
-      document.querySelector(".TexteFormation").classList.add("noir");
       document.querySelector(".TitreStage").classList.add("noir");
       document.querySelector(".TexteStage").classList.add("noir");
       document.querySelector(".TitreVeille").classList.add("noir");
@@ -133,8 +157,6 @@ var diapo = 0;
       document.querySelector(".TexteLangage").classList.remove("noir");
       document.querySelector(".TitreProjet").classList.remove("noir");
       document.querySelector(".TexteProjet").classList.remove("noir");
-      document.querySelector(".TitreFormation").classList.remove("noir");
-      document.querySelector(".TexteFormation").classList.remove("noir");
       document.querySelector(".TitreStage").classList.remove("noir");
       document.querySelector(".TexteStage").classList.remove("noir");
       document.querySelector(".TitreVeille").classList.remove("noir");
@@ -177,8 +199,6 @@ var diapo = 0;
       document.querySelector(".TexteLangage").classList.add("noir");
       document.querySelector(".TitreProjet").classList.add("noir");
       document.querySelector(".TexteProjet").classList.add("noir");
-      document.querySelector(".TitreFormation").classList.add("noir");
-      document.querySelector(".TexteFormation").classList.add("noir");
       document.querySelector(".TitreStage").classList.add("noir");
       document.querySelector(".TexteStage").classList.add("noir");
       document.querySelector(".TitreVeille").classList.add("noir");
@@ -192,17 +212,16 @@ var diapo = 0;
       fond="1";
   }
 
+//****************************************Fin Mode sombre *************************************** */
 
-
-
-
-
-
+//********************************Menu téléphone ************************************************ */
 
   document.querySelector(".nav-toggler").addEventListener("click", function(){
     document.querySelector(".nav-toggler").classList.toggle("active")
     document.querySelector("nav").classList.toggle("active")
 })
+
+//********************************Fin Menu téléphone ************************************************ */
 
 document.getElementById("button-popup-solistos").addEventListener("click",function(){
   document.querySelector(".popup-solistos").style.display="block";
