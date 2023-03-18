@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:ital,wght@1,300&display=swap');
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+}
+
+
+.page-espacecommentaire{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+}
+
+
+
+.page-espacecommentaire div{
+  width: 200px;
+  height: 500px;
+  margin: 5px;
+  background-color: lightblue;
+  transition: 2s;
+}
+
+
+.div-PageAcceuil{
+  background-image: url("../image/projetEspaceCommentaire/page_acceuil.png");
+  background-size: cover;
+  background-position: 610px;
+  
+}
+
+.div-PageEncadrant{
+  background-image: url("../image/projetEspaceCommentaire/page_encadrant.png");
+  background-size: cover;
+  background-position: -480px;
+}
+
+.div-PageVacancier{
+  background-image: url("../image/projetEspaceCommentaire/page_vacancier.png");
+  background-size: cover;
+  background-position: -460px;
+}
+
+
+
+
+ .page-espacecommentaire div:hover{
+ width: 990px;
+ transition: 2s;
+ background-position: 0px;
+}
+
+
+
+ 
+
+
+.page-espacecommentaire div:not(:hover){
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: transparent;   
+    border-color: grey; 
+}
+button:hover{
+  color: white;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #009EFF;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  
+}
+
+button:hover::before{
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) cercle-ouverture both;
+  width: 100%;
+  z-index: -1;
+  
+}
+
+
+
+@keyframes cercle-ouverture {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(150% at top left);
+  }
+}
+
+@keyframes cercle-fermeture {
+  from {
+    clip-path: circle(125%);
+  }
+  to {
+    clip-path: circle(0% at top left);
+  }
+}

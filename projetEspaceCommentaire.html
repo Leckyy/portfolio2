@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichierCSS/projetEspaceCommentaire.css">
+    <title>Projet EspaceCommentaire</title>
+</head>
+<body>
+    <h1>Espace Commentaire</h1>
+
+    <p>Pour ce projet, il y a deux types de profils : <br>
+    -le vacancier <br>
+    - l'administrateur
+    Le vacancier peut ajouter un commentaire a l'animation sélectionner, mais il doit d'abord être accepté par l'administrateur et ajouter une note. S'il n'est pas satisfait de son commentaire, il peut le supprimer.
+<br> L'administrateur peut accepter de valider le commentaire du vacancier s'il respecte les règles sinon il peut le supprimer. S'il y a trop d'abus, il peut bloquer le compte du vacancier.
+
+</p>
+    
+<section class="page-espacecommentaire">
+    <div class="div-PageAcceuil"></div>
+    <div class="div-PageEncadrant"></div>
+    <div class="div-PageVacancier"></div>
+
+</section>
+
+
+    <button id="retour">retour au portfolio</button>
+
+    <script>
+        document.getElementById("retour").addEventListener("click",function(){
+            window.close();
+        })
+    </script>
+</body>
+</html>

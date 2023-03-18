@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Gacti</title>
+    <link rel="stylesheet" href="fichierCSS/projetGacti.css">
+</head>
+<body>
+    <h1>Gacti</h1>
+
+    <p>Pour ce projet, nous avons trois profils : <br>
+        - un encadrant <br>
+        - visiteur <br>
+        - un vacancier <br>
+        Les vacanciers peuvent s'inscrire à une activité et peuvent annuler leur activité si elle n'a pas déjà commencé.
+Les encadrants peuvent ajouter une animation et dans cette animation ajouter des activités auxquelles les vacanciers peuvent s'inscrire. Ils peuvent aussi ajouter ou désinscrire un vacancier à une activité.
+L'encadrant peut aussi modifier les activités et les animations. <br>
+et les visiteurs peuvent juste voir le site, mais ne peux pas s'inscrire à une activité. 
+    </p>
+
+    <section class="page-gacti">
+        <div class="div-PageAcceuil"></div>
+        <div class="div-PageAnimation"></div>
+        <div class="div-PageActivite"></div>
+
+    </section>
+    <h1>Formulaires</h1>
+    <section class="Form-gacti">
+
+        <div class="div1-form">
+            <div class="image-fond"></div>
+            <div class="content">
+                <p>formulaire d'ajout d'animations</p>
+            </div>
+        </div>
+
+        <div class="div2-form">
+            <div class="image-fond"></div>
+            <div class="content">
+                <p>formulaire d'ajout d'activités</p>
+            </div>
+        </div>
+
+        <div class="div3-form">
+            <div class="image-fond"></div>
+            <div class="content">
+                <p>formulaire type d'animation</p>
+            </div>
+        </div>
+
+
+        <!-- <div><img src="image/projetGacti/form-animation.png" width="400px" height="500px" alt=""></div>
+
+        <div><img src="image/projetGacti/form-activité.png" width="400px" height="500px" alt=""></div>
+
+        <div><img src="image/projetGacti/form-type.png" width="400px" height="500px" alt=""></div> -->
+
+
+
+    </section>
+
+    <p>Le site est hébergé et vous pouvez le consulter ci-dessous.</p>
+    <p><a href="http://gacti.epizy.com/" target="_blank">lien du site</a></p>
+
+    <p>Compte vacancier : login : titi | mot de passe : azerty </p>
+    <p>Compte Encadrant : login : marc  | mot de passe : azerty </p>
+
+
+
+
+
+    <button id="retour">retour au portfolio</button>
+
+    <script>
+        document.getElementById("retour").addEventListener("click",function(){
+            window.close();
+        })
+    </script>
+
+</body>
+</html>

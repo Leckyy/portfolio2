@@ -349,6 +349,8 @@ p,span{
   background-repeat: no-repeat;
   background: url("../image/wave-desc-haut.svg");
 }
+
+
 .description-Div1::after{
   content: "";
   position: absolute;
@@ -472,8 +474,19 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveHtml.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
+}
+.Dhtml::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveHtml.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -8px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
 }
 
 .SectionLangage .Dhtml .modele{
@@ -508,53 +521,38 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveHtml.svg");
    width: 100%;
+   top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
+.Dhtml .back::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveHtml.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
 
-.Dhtml .Position-cercle {
+
+
+.Dhtml p {
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
   
-  .Dhtml  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .Dhtml  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .Dhtml  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .Dhtml  .circular-chart.couleur .circle {
-    stroke: orange;
-  }
-  
-  .Dhtml .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .Dhtml .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
@@ -562,6 +560,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 150px;
     position: relative;
     left: 50%;
+    top: 10%;
     transform: translate(-50%);
     filter: drop-shadow(0 0 5px orange);
 }
@@ -589,9 +588,22 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveCss.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
+
+.Dcss::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveCss.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -8px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
 
 .SectionLangage .Dcss .modele{
     position: relative;
@@ -625,52 +637,36 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveCss.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
-.Dcss .Position-cercle {
+.Dcss::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveCss.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
+
+.Dcss p{
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
-  
-  .Dcss  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .Dcss  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .Dcss  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .Dcss  .circular-chart.couleur .circle {
-    stroke: #04bbee;
-  }
-  
-  .Dcss .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .Dcss .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
@@ -678,11 +674,10 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 150px;
     position: relative;
     left: 50%;
+    top: 10%;
     transform: translate(-50%);
     filter: drop-shadow(0 0 5px #1b73ba);
 }
-/* ****************** */
-
 
 /*********************************** Dcss Fin******************************** */
 
@@ -702,9 +697,22 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveJs.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
+
+.Djs::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveJs.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -8px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
 
 .SectionLangage .Djs .modele{
     position: relative;
@@ -738,52 +746,36 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveJs.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
-.Djs .Position-cercle {
+.Djs .back::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveJs.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
+.Djs p {
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
   
-  .Djs  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .Djs  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .Djs  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .Djs  .circular-chart.couleur .circle {
-    stroke: rgb(226, 226, 3);
-  }
-  
-  .Djs .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .Djs .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
@@ -791,6 +783,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 150px;
     position: relative;
     left: 50%;
+    top: 10%;
     transform: translate(-50%);
 }
 /* ****************** */
@@ -815,9 +808,21 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/wavePhp.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
+.Dphp::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/wavePhp.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -8px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
 
 .SectionLangage .Dphp .modele{
     position: relative;
@@ -851,52 +856,37 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/wavePhp.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
-.Dphp .Position-cercle {
+.Dphp .back::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/wavePhp.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
+
+.Dphp p {
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
   
-  .Dphp  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .Dphp  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .Dphp  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .Dphp  .circular-chart.couleur .circle {
-    stroke: #464b8a;
-  }
-  
-  .Dphp .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .Dphp .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
@@ -904,6 +894,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 250px;
     position: relative;
     left: 50%;
+    top: 10%;
     transform: translate(-50%);
     filter: drop-shadow(0 0 5px #464b8a);
 }
@@ -930,8 +921,20 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveCsharp.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
+}
+
+.DcSharp::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveCsharp.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -8px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
 }
 
 
@@ -967,52 +970,37 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/waveCsharp.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
-.DcSharp .Position-cercle {
+.DcSharp::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/waveCsharp.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
+
+.DcSharp p {
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
   
-  .DcSharp  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .DcSharp  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .DcSharp  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .DcSharp  .circular-chart.couleur .circle {
-    stroke: #68217a;
-  }
-  
-  .DcSharp .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .DcSharp .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
@@ -1020,6 +1008,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 150px;
     position: relative;
     left: 50%;
+    top: 10%;
     transform: translate(-50%);
     filter: drop-shadow(0 0 5px #68217a);
 }
@@ -1044,9 +1033,22 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/wavePython.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
+
+.Dpython::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/wavePython.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
+
 
 
 .SectionLangage .Dpython .modele{
@@ -1081,59 +1083,43 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     position: absolute;
     background: url("../decoration/wavePython.svg");
     width: 100%;
+    top: -1px;
     height: 109.8px;
     background-repeat: no-repeat;
 }
 
+.Dpython .back::after{
+  content: "";
+  position: absolute;
+  background: url("../decoration/wavePython.svg");
+  width: 100%;
+  height: 109.8px;
+  bottom: -9px;
+  transform: rotateX(150deg);
+  background-repeat: no-repeat;
+}
 
-.Dpython .Position-cercle {
+
+.Dpython p {
     position: relative;
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
-  
-  .Dpython  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .Dpython  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .Dpython  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-  }
-  
-  .Dpython  .circular-chart.couleur .circle {
-    stroke: #04bbee;
-  }
-  
-  .Dpython .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-
 
   /* **************** */
 
   /* Visible */
 .Dpython .contenue h2{
+  position: relative;
+  top: 20px;
     text-align: center;
 }
 
 .Dpython .contenue img{
     width: 150px;
     position: relative;
+    top: 10%;
     left: 50%;
     transform: translate(-50%);
 }

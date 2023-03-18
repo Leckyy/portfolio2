@@ -71,7 +71,7 @@ var diapo = 0;
     else{
         document.querySelector(".swiper").style.display="none";
         document.querySelector(".SectionProjet").style.display="flex";
-        document.getElementById('diapoBT').innerHTML="Activer le diporama";
+        document.getElementById('diapoBT').innerHTML="Activer le diaporama";
         localStorage.removeItem("diapo");
         location.reload()
         diapo--;
