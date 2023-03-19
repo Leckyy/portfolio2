@@ -322,7 +322,7 @@ p,span{
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   flex-direction: row;
 }
 
@@ -413,8 +413,10 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
-  height: 60vh;
+  height: 89vh;
   flex-direction: row;
+  background-color: #97DEFF;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
 }
 
 .formation .div1-formation,.div2-formation,.div3-formation,.div4-formation{
@@ -425,10 +427,14 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 
 .formation .div2-0-formation{
   position: relative;
-  top: 40%;
+  top: 30%;
   left: 17%;
   transform: translate(-50%);
+  z-index: 100;
 }
+
+
+
 
 .formation .div2-0-formation .fleche-bas{
   position: absolute;
@@ -464,7 +470,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 }
 
 .Fond-Les-Languages{
-  background-color: #97DEFF;
+  /* background-color: #97DEFF; */
   clip-path: polygon(0% 0%, 100% 1%, 100% 99%, 51% 91%, 0% 99%);
 
 
@@ -482,16 +488,18 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #0014FF;
+	background-color: #EDB506;
 	margin: 0 10px 8px 0;
 }
+
+
 
 .TitreLangage::after {
 	content: '';
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #0014FF;
+	background-color: #EDB506;
 	margin: 0 0 8px 10px;
 }
 
@@ -1188,7 +1196,15 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 
 /*********************************** Mes Projets ******************************** */
 
+.SectionLesProjet{
+  background-color: #97DEFF;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+  clip-path: polygon(0% 1%, 100% 1%, 100% 100%, 50% 95%, 0% 99%);
+
+}
+
 .TitreProjet{
+  padding-top: 100px;
     position: relative;
     text-align: center;
 }
@@ -1198,7 +1214,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 10px 8px 0;
 }
 
@@ -1207,7 +1223,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 0 8px 10px;
 }
 
@@ -1281,6 +1297,7 @@ box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
     width: 100%;
     
     height: auto;
+    padding-bottom: 100px;
     
     flex-direction: row;
    
@@ -2281,26 +2298,7 @@ transition: 0.5s ease-in-out;
 /* **************************** Diapo Projet EspaceCommentaire FIN  *********************************** */
 
 
-/* ********************************* Formation ***************************************** */
-/* .TitreFormation{
-    position: relative;
-    text-align: center;
-}
-
-
-.TexteFormation{
-    text-align: center;
-} */
-
-
-
 /* **************************** Stage ************************************************************ */
-.FondStage{
-  background-color: #97DEFF;
-  position: relative;
-  bottom: 80px;
-}
-
 .TitreStage{
   position: relative;
   text-align: center;
@@ -2311,7 +2309,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #0014FF;
+	background-color: #EDB506;
 	margin: 0 10px 8px 0;
 }
 
@@ -2320,7 +2318,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #0014FF;
+	background-color: #EDB506;
 	margin: 0 0 8px 10px;
 }
 
@@ -2467,6 +2465,13 @@ transition: 0.5s ease-in-out;
 
 /* *************************** Veille technologique ************************************************** */
 
+.SectionLaVieilleTechnologique{
+  background-color: #97DEFF;
+  clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 50% 5%, 100% 0%);
+  padding-top: 100px;
+}
+
+
 .TitreVeille{
   position: relative;
   text-align: center;
@@ -2477,7 +2482,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 10px 8px 0;
 }
 
@@ -2486,7 +2491,7 @@ transition: 0.5s ease-in-out;
 	display: inline-block;
 	width: 5rem;
 	height: 5px;
-	background-color: #EDB506;
+	background-color: #0014FF;
 	margin: 0 0 8px 10px;
 }
 

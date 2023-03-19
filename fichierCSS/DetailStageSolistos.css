@@ -12,9 +12,38 @@ p{
 
 
 
+.SectionTache{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+}
 
+.SectionTache .div1-tache,.div2-tache,
+.div3-tache,.div4-tache,.div5-tache,
+.div6-tache,.div7-tache,.div8-tache {
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-color: lightblue;
+}
 
+.div1-tache .img{
 
+}
+.div2-tache .img{
+  
+}
+
+.div3-tache .img{
+  background: url("../image/imgStage/ajouter-produit-1.png");
+  width: 400px;
+  height: 400px;
+}
 
 
 

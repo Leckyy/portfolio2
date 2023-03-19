@@ -27,7 +27,7 @@ new Typewriter(desc,{
  DelayNode: 100,
 })
     .changeDelay(30)
-    .typeString("Je m'appelle Tristan AURIAT je suis étudiant aux lycée Parc de Vilgenis ")
+    .typeString("Je m'appelle Tristan AURIAT et je suis en apprentissage pour devenir développeur web. ")
     .start()
     }
 
@@ -36,7 +36,7 @@ new Typewriter(desc,{
 })
 
 function DescSansAnimation(){
-  desc.innerHTML="Je m'appelle Tristan AURIAT je suis étudiant aux lycée Parc de Vilgenis en deuxième année de SIO (Services Informatiques aux Organisations ) .Grace a mes stages effectuer mes années précedentes  j'ai découvert le développement web. Ceci ma permis de découvrir sur différentes formes en le codant, avec wordpress ou même Wix. J'ai beaucoup aimer réaliser des sites internets c'est pour cela que j'ai rejoins le lycee Parc de Vilgenis pour m'approfondir dans ce domaines. Pour cela en premiere année on a des cours pour apprendres le html css et php avec des minis-tp et des projets à réaliser pour ce former d'avantage. En deuxieme années  on nous apprends toujours le développement mais cette fois ci plus approfondi";
+  desc.innerHTML="Je m'appelle Tristan AURIAT et je suis en apprentissage pour devenir développeur web. Grace a mes stages effectués mes années précédentes, j'ai découvert le développement web. Ceci m'a permis de découvrir sur différentes formes en le codant, avec WordPress ou même Wix. J'ai beaucoup aimé réaliser des sites Internet, c'est pour cela que j'ai rejoint le lycée Parc de Vilgenis en 2021 pour m'approfondir dans ce domaine. Pour cela en première année, on a des cours pour apprendre le html css et php avec des minis-tp et des projets à réaliser pour se former davantage. En deuxième année, on nous apprend toujours le développement, mais cette fois-ci plus approfondi.";
 }
 
 
