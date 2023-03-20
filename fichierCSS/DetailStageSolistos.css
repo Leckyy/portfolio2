@@ -11,40 +11,157 @@ p{
 }
 
 
+/* grid Animation */
 
-.SectionTache{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  flex-direction: row;
+   
+#item-0 .back,#item-1 .back,#item-2 .back,#item-3 .back,#item-4 .back,#item-5 .back,#item-6 .back,#item-7 .back{
+  opacity: 0;
+  transition: 1s;
+}
+#item-0:hover,#item-1:hover,#item-2:hover,#item-3:hover,#item-4:hover,#item-5:hover,#item-6:hover,#item-7:hover{
+  background: url(none);
+  transition: 1s;
+  opacity: 1;
 }
 
-.SectionTache .div1-tache,.div2-tache,
-.div3-tache,.div4-tache,.div5-tache,
-.div6-tache,.div7-tache,.div8-tache {
-  width: 400px;
-  height: 400px;
-  margin: 15px;
-  background-color: lightblue;
+#item-0:hover .back,#item-1:hover .back,#item-2:hover .back,#item-3:hover .back,#item-4:hover .back,#item-5:hover .back,#item-6:hover .back,#item-7:hover .back{
+  opacity: 1;
+  transition: 1s;
 }
 
-.div1-tache .img{
 
+.angry-grid #item-0,#item-1,#item-2,#item-3,#item-4,#item-5,#item-6,#item-7:not(:hover){
+  opacity: 0.5;
 }
-.div2-tache .img{
+
+/* Fin grid animation */
+
+
+
+/* ------------------------grid---------------- */
+
+.angry-grid {
+  display: grid; 
+
+  grid-template-rows: 200px 250px 200px 200px 300px ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
   
 }
+ 
+#item-0 {
+  background-color: #7EE8D5; 
+  grid-row-start: 1;
+  grid-column-start: 1;
 
-.div3-tache .img{
+  grid-row-end: 3;
+  grid-column-end: 2;
+  border: 1px solid black;
+  background: url("../image/fondStage/shopify.png");
+  background-size: cover;
+  transition: 1s;
+  
+  
+}
+#item-1 {
+
+  background-color: #D795D8; 
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 2;
+  grid-column-end: 4;
+  border: 1px solid black;
+ 
+  transition: 1s;
+}
+#item-2 {
+
+  background-color: #66D65A; 
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+  border: 1px solid black;
+  background: url("../image/fondStage/Determine-Filtre.png");
+  background-size: cover;
+  transition: 1s;
+}
+#item-3 {
+
+  background-color: #DD5677; 
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+  border: 1px solid black;
+  background: url("../image/fondStage/Site-marchand.png");
+  background-size: cover;
+  transition: 1s;
+}
+#item-4 {
+
+  background-color: #7B97A9; 
+  grid-row-start: 4;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 5;
+  border: 1px solid black;
+  background: url("../image/fondStage/Determine-Pack.png");
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+#item-5 {
+
+  background-color: #ED7D99; 
+  grid-row-start: 5;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 4;
+  border: 1px solid black;
+  transition: 1s;
+}
+#item-6 {
+
+  background-color: #95777D; 
+  grid-row-start: 1;
+  grid-column-start: 4;
+
+  grid-row-end: 4;
+  grid-column-end: 5;
+  border: 1px solid black;
   background: url("../image/imgStage/ajouter-produit-1.png");
-  width: 400px;
-  height: 400px;
+  background-position: -360px;
+  background-size: cover;
+  transition: 1s;
+}
+#item-7 {
+
+  background-color: #A6C98B; 
+  grid-row-start: 5;
+  grid-column-start: 4;
+
+  grid-row-end: 6;
+  grid-column-end: 5;
+  border: 1px solid black;
+  background: url("../image/fondStage/seo.jpg");
+  background-size: cover;
+  background-position: -95px;
+  transition: 1s;
 }
 
+
+
+
+
+
+
+
+/* -------------------Fin grid---------------- */
 
 
 
